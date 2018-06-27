@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		715872C920CCB5C700FCCAD0 /* SequentialTextSelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715872C820CCB5C700FCCAD0 /* SequentialTextSelectionManager.swift */; };
+		715872CB20CCB67600FCCAD0 /* TextViewSelectionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715872CA20CCB67600FCCAD0 /* TextViewSelectionSession.swift */; };
+		715872CD20CCB74D00FCCAD0 /* TextViewSelectionRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715872CC20CCB74D00FCCAD0 /* TextViewSelectionRange.swift */; };
+		715872CF20CCD18E00FCCAD0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715872CE20CCD18E00FCCAD0 /* Utils.swift */; };
+		715872D120CCD38D00FCCAD0 /* TextViewMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715872D020CCD38D00FCCAD0 /* TextViewMetadata.swift */; };
 		71DC415720CACF3900FCBD1D /* SequentialTextSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DC415520CACF3900FCBD1D /* SequentialTextSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71DC415F20CAD18300FCBD1D /* SequentialTextSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC415E20CAD18300FCBD1D /* SequentialTextSelection.swift */; };
+		71DC416220CAD9CC00FCBD1D /* AttributeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC416120CAD9CC00FCBD1D /* AttributeRange.swift */; };
+		71DC416420CAE5D000FCBD1D /* NSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC416320CAE5D000FCBD1D /* NSTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		715872C820CCB5C700FCCAD0 /* SequentialTextSelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialTextSelectionManager.swift; sourceTree = "<group>"; };
+		715872CA20CCB67600FCCAD0 /* TextViewSelectionSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewSelectionSession.swift; sourceTree = "<group>"; };
+		715872CC20CCB74D00FCCAD0 /* TextViewSelectionRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewSelectionRange.swift; sourceTree = "<group>"; };
+		715872CE20CCD18E00FCCAD0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		715872D020CCD38D00FCCAD0 /* TextViewMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewMetadata.swift; sourceTree = "<group>"; };
 		71DC415220CACF3900FCBD1D /* SequentialTextSelection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SequentialTextSelection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DC415520CACF3900FCBD1D /* SequentialTextSelection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SequentialTextSelection.h; sourceTree = "<group>"; };
 		71DC415620CACF3900FCBD1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71DC415E20CAD18300FCBD1D /* SequentialTextSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialTextSelection.swift; sourceTree = "<group>"; };
+		71DC416120CAD9CC00FCBD1D /* AttributeRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeRange.swift; sourceTree = "<group>"; };
+		71DC416320CAE5D000FCBD1D /* NSTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +62,26 @@
 		71DC415420CACF3900FCBD1D /* SequentialTextSelection */ = {
 			isa = PBXGroup;
 			children = (
+				71DC416020CAD99C00FCBD1D /* Supporting */,
+				71DC415E20CAD18300FCBD1D /* SequentialTextSelection.swift */,
+				715872C820CCB5C700FCCAD0 /* SequentialTextSelectionManager.swift */,
+				715872CA20CCB67600FCCAD0 /* TextViewSelectionSession.swift */,
 				71DC415520CACF3900FCBD1D /* SequentialTextSelection.h */,
 				71DC415620CACF3900FCBD1D /* Info.plist */,
 			);
 			path = SequentialTextSelection;
+			sourceTree = "<group>";
+		};
+		71DC416020CAD99C00FCBD1D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				71DC416320CAE5D000FCBD1D /* NSTextView.swift */,
+				71DC416120CAD9CC00FCBD1D /* AttributeRange.swift */,
+				715872CC20CCB74D00FCCAD0 /* TextViewSelectionRange.swift */,
+				715872D020CCD38D00FCCAD0 /* TextViewMetadata.swift */,
+				715872CE20CCD18E00FCCAD0 /* Utils.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +127,7 @@
 				TargetAttributes = {
 					71DC415120CACF3900FCBD1D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715872C920CCB5C700FCCAD0 /* SequentialTextSelectionManager.swift in Sources */,
+				71DC416220CAD9CC00FCBD1D /* AttributeRange.swift in Sources */,
+				715872D120CCD38D00FCCAD0 /* TextViewMetadata.swift in Sources */,
+				715872CD20CCB74D00FCCAD0 /* TextViewSelectionRange.swift in Sources */,
+				715872CB20CCB67600FCCAD0 /* TextViewSelectionSession.swift in Sources */,
+				715872CF20CCD18E00FCCAD0 /* Utils.swift in Sources */,
+				71DC415F20CAD18300FCBD1D /* SequentialTextSelection.swift in Sources */,
+				71DC416420CAE5D000FCBD1D /* NSTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +299,7 @@
 		71DC415B20CACF3900FCBD1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -277,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.brychan.SequentialTextSelection;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -284,6 +327,7 @@
 		71DC415C20CACF3900FCBD1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

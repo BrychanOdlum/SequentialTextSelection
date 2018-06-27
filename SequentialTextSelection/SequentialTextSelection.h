@@ -5,6 +5,8 @@
 //  Created by Brychan Bennett-Odlum on 08/06/2018.
 //  Copyright © 2018 Brychan Bennett-Odlum. All rights reserved.
 //
+//	Based on INDSequentialTextSelectionManager by Indragie Karunaratne.
+//
 
 #import <Cocoa/Cocoa.h>
 
